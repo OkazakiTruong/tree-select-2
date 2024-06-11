@@ -1,0 +1,19 @@
+@import "../assets/less/variable.less";
+@import "../assets/less/mixins.less";
+.container {
+  input[type="checkbox"] {
+    display: none;
+  }
+  .item-wrapper {
+    display: flex;
+    align-items: center;
+    .ic-open-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      .border-mixin;
+    }
+  }
+}

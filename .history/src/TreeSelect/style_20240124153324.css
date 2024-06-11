@@ -1,0 +1,97 @@
+ul,
+li {
+  list-style: none;
+}
+.ml-20 {
+  margin-left: 48px;
+}
+.container {
+  width: 500px;
+  margin: 40px auto;
+}
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.checkbox-custom.checked,
+.checkbox-custom:hover {
+  border: 1px solid #4096ff;
+}
+input[type="checkbox"] {
+  display: none;
+}
+.checkbox-tick {
+  width: 100%;
+  height: 100%;
+  background-color: #4096ff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scale: 0;
+  transition: 0.1s ease;
+}
+.checkbox-custom.checked > .checkbox-tick {
+  scale: 1;
+}
+.checkbox-custom.pending > .checkbox-tick {
+  width: 100%;
+  height: 100%;
+  background-color: #4096ff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scale: 0.8;
+  transition: 0.1s ease;
+}
+.checkbox-custom.pending > .checkbox-tick > i {
+  display: none;
+}
+
+.item-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.checkbox-title {
+  margin-left: 20px;
+}
+.ic-open-menu {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.ic-open-menu:hover {
+  background-color: #f0f0f0;
+}
+.ic-open-menu i {
+  transition: 0.2s ease;
+}
+.ic-open-menu i.open {
+  transform: rotate(90deg);
+}
+
+.checkbox-children {
+  height: fit-content;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.2s ease;
+}
+
+.checkbox-children.open {
+  height: fit-content;
+  max-height: 1000px;
+  overflow: hidden;
+}

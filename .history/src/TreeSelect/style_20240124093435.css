@@ -1,0 +1,16 @@
+.ml-20 {
+  margin-left: 20px;
+}
+.container {
+  width: 500px;
+  margin: 40px auto;
+}
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
